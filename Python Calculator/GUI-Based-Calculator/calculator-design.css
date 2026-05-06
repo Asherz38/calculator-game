@@ -15,8 +15,10 @@
     align-items:center; /* gpt */ /* gpt */
 }
 
-.calculator-display h1 {
+.calculator-display {
     margin:0;
+    font-family:'Times New Roman', Times, serif;
+    font-size:32px;
 }
 
 .container-calculator {
@@ -30,10 +32,17 @@
     margin:2.5px 2.5px;
 }
 
-.number-btn, .dot-btn, .equals-btn {
+.number-btn, .dot-btn {
     background-color:aqua;
     width:100px;
     height:100px;
+}
+
+.equals-btn {
+    background-color:rgb(136, 255, 0);
+    width:100px;
+    height:100px;
+
 }
 
 .operator-btn {
@@ -54,6 +63,10 @@
 
 .btn-custom-2 {
    border: 2px solid rgb(0, 255, 110); 
+}
+
+.btn-custom-3 {
+    border: 2px solid rgb(136, 255, 0); 
 }
 
 button {

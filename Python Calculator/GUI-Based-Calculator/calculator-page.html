@@ -6,39 +6,38 @@
     </head>
     <body>
         <div class="container">
-            <div class="calculator-display">
-                <h1>hi</h1>
-            </div>
+            <div id="display" class="calculator-display"></div>
             <div class="container-calculator">
             <div class="row-btn">
                 <div class="number-btn"><button type="button">7</button></div>
                 <div class="number-btn"><button type="button">8</button></div>
                 <div class="number-btn"><button type="button">9</button></div>
-                <div class="operator-btn"><button type="button" class="btn-custom-2">÷</button></div>
+                <div id="divide-btn" class="operator-btn operate-btn"><button type="button" class="btn-custom-2">÷</button></div>
             </div>
             <div class="row-btn">
                 <div class="number-btn"><button type="button">4</button></div>
                 <div class="number-btn"><button type="button">5</button></div>
                 <div class="number-btn"><button type="button">6</button></div>
-                <div class="operator-btn"><button class="btn-custom-2" type="button">×</button></div>
+                <div id="multiply-btn" class="operator-btn operate-btn"><button class="btn-custom-2" type="button">×</button></div>
             </div>
             <div class="row-btn">
                 <div class="number-btn"><button type="button">1</button></div>
                 <div class="number-btn"><button type="button">2</button></div>
                 <div class="number-btn"><button type="button">3</button></div>
-                <div class="operator-btn"><button class="btn-custom-2" type="button">-</button></div>
+                <div id="subtract-btn" class="operator-btn operate-btn"><button class="btn-custom-2" type="button">-</button></div>
             </div>
             <div class="row-btn">
                 <div class="number-btn"><button type="button">0</button></div>
                 <div class="dot-btn"><button type="button">.</button></div>
-                <div class="equals-btn"><button type="button">=</button></div>
-                <div class="operator-btn"><button class="btn-custom-2" type="button">+</button></div>
+                <div class="equals-btn"><button class="btn-custom-3" type="button" onclick="calculate()">=</button></div>
+                <div id="add-btn" class="operator-btn operate-btn"><button class="btn-custom-2" type="button">+</button></div>
             </div>
             <div class="row-btn">
-                <div class="remainder-btn"><button class="btn-custom" type="button">%</button></div>
-                <div class="del-btn"><button class="btn-custom" type="button">AC</button></div>
+                <div id="remain-btn" class="remainder-btn operate-btn"><button class="btn-custom" type="button" onclick="remainderNumbers()">%</button></div>
+                <div id="delete-btn" class="del-btn"><button class="btn-custom" type="button" onclick="deleteNumbers()">AC</button></div>
             </div>
             </div>
         </div>
+        <script src="calculator-function.js"></script>
     </body>
 </html>
