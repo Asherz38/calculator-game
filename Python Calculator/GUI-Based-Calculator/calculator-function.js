@@ -1,5 +1,7 @@
 let justCalculated = false;
 
+let display = document.getElementById("display");
+
 function calculate() {
     let expression = display.textContent;
 
@@ -13,8 +15,6 @@ function calculate() {
 function deleteNumbers() {
     display.textContent = display.textContent.slice(0, 0);
 }
-
-let display = document.getElementById("display");
 
 let numButtons = document.getElementsByClassName("number-btn");
 
