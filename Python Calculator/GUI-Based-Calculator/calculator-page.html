@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="calculator-design.css">
     </head>
     <body>
@@ -38,6 +39,17 @@
             </div>
             </div>
         </div>
+
+        <div class="chat-container">
+            <div class="faq-title">Calculator FAQ</div>
+            <div id="chat-messages"></div>
+            <div class="faq-options">
+                <button class="faq-option-button" type="button" onclick="sendFaqOption(0)">Clear display</button>
+                <button class="faq-option-button" type="button" onclick="sendFaqOption(1)">Use decimals</button>
+                <button class="faq-option-button" type="button" onclick="sendFaqOption(2)">Percent button</button>
+            </div>
+        </div>
+
         <script src="calculator-function.js"></script>
     </body>
 </html>
