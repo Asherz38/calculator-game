@@ -1,1 +1,1 @@
-# calculator-game
+# calculator-app
